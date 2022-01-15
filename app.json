@@ -1,9 +1,11 @@
 {
-  "name": "RAM-UBOT",
-  "description": "[RAM-UBOT] Adalah repo yang dapat digunakan di aplikasi telegram.",
-  "logo": "https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg",
-  "keywords": ["telegram", "userbot", "RAM-UBOT", "modular", "python"],
-  "repository": "https://github.com/Zaen-ubot/Deploy-Ramtod",
+  "name": "𝗚𝗲𝗲𝘇 𝙐𝙎𝙀𝙍𝘽𝙊𝙏",
+  "description": "🚫Geez-UserBot🚫 USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
+  "logo": "",
+  "keywords": ["telegram", "userbot", "plugin", "modular", "productivity"],
+  "repository": "https://github.com/Vicxln/GeezDeploy",
+  "telegram": "https://t.me/VckyouuBitch",
+  "success_url": "https://t.me/CariTemanRandom",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -68,7 +70,7 @@
   "formation": {
     "worker": {
       "quantity": 1,
-      "size": "free"
+      "size": "free
     }
   }
 }
