@@ -1,16 +1,16 @@
 # Using Python Slim-Buster
-FROM vckyouuu/geezprojects:buster
-# Geez-UserBot
-#
-RUN git clone -b Geez-UserBot https://github.com/vckyou/Geez-UserBot /root/userbot
-RUN mkdir /root/userbot/.bin
-RUN pip install --upgrade pip setuptools
-WORKDIR /root/userbot
+FROM vckyouubitch/geez:slim-buster
+
+RUN git clone -b master https://github.com/vckyou/GeezProjects /home/geezprojects/ \
+    && chmod 777 /home/geezprojects \
+    && mkdir /home/geezprojects/bin/
+
+WORKDIR /home/geezprojects/
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/vckyou/Geez-UserBot/Geez-UserBot/requirements.txt
+RUN pip3 install -r https://raw.githubusercontent.com/vckyou/Reforestation/master/requirements.txt
 
 EXPOSE 80 443
 
 # Finalization
-CMD ["python3","-m","userbot"]
+CMD [ "bash", "start" ]
